@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TableLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/card_pic"
+                    android:src="@drawable/picture"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="70dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/file_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Ravi Singh.pdf"
+                    android:layout_width="match_parent"
+                    android:maxLines="2"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:typeface="serif"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/datetime"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="25/10/2017 5:36"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:typeface="serif"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:id="@+id/card_view_options"
+                            android:layout_height="15dp"
+                            android:layout_width="15dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/more_options" />
+
+                        </TableRow>
+
+                </RelativeLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
