@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">"Smart Locker"</string>
+
+    <!--LogIn screen-->
+    <string name="login_header">LOGIN</string>
+    <string name="email_hint">User Name</string>
+    <string name="password_hint">Password</string>
+    <string name="signIn">Sign In</string>
+    <string name="signUp">Sign Up</string>
+
+
+    <!--Registration Screen-->
+    <string name="register_header">Register</string>
+    <string name="name_hint">Name</string>
+    <string name="contact_hint">Contact</string>
+    <string name="emailId_hint">Email Id</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="key_hint">Enter Key</string>
+
+</resources>
